@@ -1,0 +1,208 @@
+.acerca_de_mi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.acerca_de_mi h1 {
+  display: block;
+  margin-left: 30px;
+  margin-left-height: 20vh;
+}
+
+.acerca_de_mi .container_adapt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80vh;
+}
+
+.acerca_de_mi .container_adapt .info_me {
+  width: 50%;
+  position: relative;
+}
+
+.acerca_de_mi .container_adapt .info_me h2 {
+  padding: 10px 0px 0px 5vw;
+}
+
+.acerca_de_mi .container_adapt .info_me p {
+  padding: 10px 0px 0px 5vw;
+  text-align: justify;
+}
+
+.acerca_de_mi .container_adapt .info_me .btns_CV_DM {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.acerca_de_mi .container_adapt .info_me #CV, .acerca_de_mi .container_adapt .info_me #DM {
+  margin-top: 80px;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  background: #33333F;
+  color: #D8D4D4;
+  font-size: 15px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.acerca_de_mi .container_adapt .info_me #CV:hover, .acerca_de_mi .container_adapt .info_me #DM:hover {
+  background: #742E4B;
+  cursor: pointer;
+}
+
+.acerca_de_mi .container_adapt .card_me {
+  width: 50%;
+  margin: 30px;
+}
+
+.acerca_de_mi .container_adapt .card_me img {
+  display: block;
+  width: 40vw;
+  margin: auto;
+  border-radius: 2em;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-y: hidden;
+}
+
+body nav {
+  background: #33333F;
+  height: 60px;
+  width: 70%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom-left-radius: 1em;
+  overflow: hidden;
+  -webkit-transition: .6s;
+  transition: .6s;
+  cursor: pointer;
+  z-index: 1;
+}
+
+body nav span {
+  color: #eeeeee;
+  cursor: pointer;
+  height: 100%;
+  width: 20%;
+  line-height: 60px;
+  text-align: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-size: 110%;
+}
+
+body nav span:hover {
+  background-color: #742E4B;
+  color: #eeeeee;
+}
+
+body nav i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #742E4B;
+  height: 100%;
+  width: 20%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  color: #eeeeee;
+}
+
+body #gotop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 5px 15px;
+  border-radius: 1em;
+  border: none;
+  background: #33333F;
+  color: #dddddd;
+}
+
+body #gotop:hover {
+  background: #742E4B;
+  cursor: pointer;
+}
+
+body .screen {
+  background: #eeeeee;
+  height: 100vh;
+  margin-bottom: 0px;
+}
+
+body .screen h1 {
+  margin: 0px;
+  padding: 10px 0px 0px 5vw;
+  font-size: 3vw;
+  color: #742E4B;
+}
+
+.dark {
+  background: #33333F;
+}
+
+.hide {
+  right: -59%;
+}
+
+@media (max-width: 768px) {
+  body nav {
+    top: 70px;
+    right: 0%;
+    height: auto;
+    width: 40%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-top-left-radius: 1em;
+  }
+  body nav span {
+    width: 100%;
+  }
+  body nav i {
+    display: block;
+    position: fixed;
+    height: 60px;
+    line-height: 60px;
+    background-color: #742E4B;
+    width: 40vw;
+    text-align: center;
+    color: #eeeeee;
+    top: 0px;
+    right: 0px;
+    border-bottom-left-radius: 1em;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

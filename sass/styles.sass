@@ -1,0 +1,99 @@
+@import acerca_de
+	
+$color_1: #eeeeee
+$color_2: #E4CB7F
+$color_3: #742E4B
+$color_4: #33333F
+
+body
+	margin: 0px
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+	overflow-y: hidden
+	nav
+		background: $color_4
+		height: 60px
+		width: 70%
+		position: fixed
+		top: 0
+		right: 0
+		display: flex
+		align-items: center
+		justify-content: space-around
+		border-bottom-left-radius: 1em
+		overflow: hidden
+		transition: .6s
+		cursor: pointer
+		z-index: 1
+		span
+			color: $color_1
+			cursor: pointer
+			height: 100%
+			width: 20%
+			line-height: 60px
+			text-align: center
+			transition: .5s
+			font-size: 110%
+			&:hover
+				background-color: $color_3
+				color: $color_1
+		i
+			display: flex
+			background: $color_3
+			height: 100%
+			width: 20%
+			justify-content: center
+			align-items: center
+			text-transform: uppercase
+			color: $color_1
+	#gotop
+		position: fixed
+		bottom: 30px
+		right: 30px
+		padding: 5px 15px
+		border-radius: 1em
+		border: none
+		background: $color_4
+		color: #dddddd
+		&:hover
+            background: $color_3
+            cursor: pointer
+		
+	.screen
+		background: $color_1
+		height: 100vh
+		margin-bottom: 0px
+		h1
+			margin: 0px
+			padding: 10px 0px 0px 5vw
+			font-size: 3vw
+			color: $color_3
+.dark
+	background: $color_4
+.hide
+	right: -59%
+	
+
+@media (max-width: 768px)
+	body
+		nav
+			top: 70px
+			right: 0%
+			height: auto
+			width: 40%
+			flex-direction: column
+			border-top-left-radius: 1em
+			span
+				width: 100%
+
+			i
+				display: block
+				position: fixed
+				height: 60px
+				line-height: 60px
+				background-color: $color_3
+				width: 40vw
+				text-align: center
+				color: $color_1
+				top: 0px
+				right: 0px
+				border-bottom-left-radius: 1em
